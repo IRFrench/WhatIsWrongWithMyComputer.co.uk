@@ -3,18 +3,6 @@
 title: About
 permalink: /about/
 ---
+# Isaac French
 
-[_home_](/)_/about_
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Currently working at [Exa Networks](https://exa.net.uk) as a junior engineer in the R&D department for my placement year of university. I am currently studying for a BSc in Computer Science.
