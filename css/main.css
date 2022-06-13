@@ -1,0 +1,33 @@
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(14, 14, 68, 1) 46%, rgba(0, 113, 136, 1) 100%);
+    color: white;
+    font-family: Courier New, monospace;
+}
+
+#header-block {
+    padding: 2rem 10% 2rem 10%;
+    border-bottom: 5px dashed white;
+}
+
+#title {
+    font-family: Andale Mono, monospace;
+    color: rgb(255, 255, 255);
+}
+
+#content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media only screen and (max-width: 1000px) {
+    #content {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #header-block {
+        padding: 2rem 0% 2rem 0%;
+        border-bottom: 5px dashed white;
+    }
+}
