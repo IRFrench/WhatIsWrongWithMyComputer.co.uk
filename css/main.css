@@ -7,7 +7,6 @@ body {
     --light_black: rgb(50, 50, 50);
     --black_to_blue: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(14, 14, 68, 1) 46%, rgba(0, 113, 136, 1) 100%);
 
-
     margin: 0;
     padding: 0;
     background: var(--white);
@@ -28,7 +27,6 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    column-gap: 1rem;
 }
 
 .nav-item {
@@ -38,6 +36,7 @@ body {
 .nav-item:last-child {
     margin-left: auto;
     margin-right: 2rem;
+
 }
 
 .nav-link {
@@ -46,16 +45,46 @@ body {
     height: 3rem;
     color: var(--dark_gray);
     text-decoration: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.nav-text {
+    display: flex;
+    font-size: 1rem;
 }
 
 .nav-link:hover {
     color: var(--light_white);
-    transition: 600ms;
+    transition: 200ms;
+    background-color: var(--light_black);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
 
 .header-block {
     padding: 3rem 10% 2rem 10%;
-    border-bottom: 5px dashed var(--black);
+    /* background: var(--black_to_blue); */
+    /* clip-path: polygon(50% 3rem, 100% 3rem, 100% 65%, 50% 150%, 0 65%, 0 3rem); */
+    text-align: center;
+}
+
+.header-title {
+    color: var(--black);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.header-text {
+    color: var(--dark_white);
+    font-style: italic;
 }
 
 .title {
@@ -77,5 +106,48 @@ body {
     .header-block {
         padding: 2rem 0% 2rem 0%;
         border-bottom: 5px dashed var(--black);
+    }
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
     }
 }

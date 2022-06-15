@@ -1,3 +1,4 @@
 - Add a comment system by saving the comments to a file on a s3 bucket
 - Add a footer with additional information like Github, LinkedIn, discord etc
 - Add a navbar to the top of the page linking to blogs, about etc
+- Add writing animation to the header-text element
