@@ -5,12 +5,18 @@ body {
     --dark_white: rgb(150, 150, 150);
     --dark_gray: rgb(100, 100, 100);
     --light_black: rgb(50, 50, 50);
-    --black_to_blue: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(14, 14, 68, 1) 46%, rgba(0, 113, 136, 1) 100%);
+    --yellow: #caf822;
+    --silver_grad: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(200, 200, 200, 1) 80%, rgba(177, 177, 177, 1) 100%);
+    --blue_grad: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(14, 14, 68, 1) 46%, rgba(0, 113, 136, 1) 100%);
+    --green-grad: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(171, 255, 159, 1) 80%, rgba(127, 255, 111, 1) 100%);
 
     margin: 0;
     padding: 0;
-    background: var(--white);
-    color: var(--black);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    color: var(--white);
     font-family: Courier New, monospace;
 }
 
@@ -58,44 +64,63 @@ body {
     color: var(--light_white);
     transition: 200ms;
     background-color: var(--light_black);
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
 }
 
 .header-block {
-    padding: 3rem 10% 2rem 10%;
+    /* padding: 3rem 10% 2rem 10%; */
     /* background: var(--black_to_blue); */
     /* clip-path: polygon(50% 3rem, 100% 3rem, 100% 65%, 50% 150%, 0 65%, 0 3rem); */
-    text-align: center;
+    /* text-align: center; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-title {
-    color: var(--black);
-    font-weight: 900;
+    color: var(--white);
+    font-weight: 500;
     font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.center-wrapper {
+    color: var(--light_white);
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-text {
-    color: var(--dark_white);
-    font-style: italic;
+    animation: typing 7s steps(91), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 91ch;
 }
 
 .title {
     font-family: Andale Mono, monospace;
-    color: var(--black);
+    font-weight: 100;
+    color: var(--white);
 }
 
 .content {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.blog-list {
+    list-style: ">>> ";
+}
+
+.blog-link:hover {
+    color: var(--black);
+    background-color: var(--yellow);
+}
+
 
 @media only screen and (max-width: 1000px) {
     .content {
@@ -105,49 +130,31 @@ body {
 
     .header-block {
         padding: 2rem 0% 2rem 0%;
-        border-bottom: 5px dashed var(--black);
     }
 }
 
-/* DEMO-SPECIFIC STYLES */
-.typewriter h1 {
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em;
-    /* Adjust as needed */
-    animation:
-        typing 3.5s steps(30, end),
-        blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
 @keyframes typing {
     from {
         width: 0
     }
+}
 
-    to {
-        width: 100%
+@keyframes blink {
+    50% {
+        border-color: transparent
     }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
     }
 
     50% {
-        border-color: orange
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }
