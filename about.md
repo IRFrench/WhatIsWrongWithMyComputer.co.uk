@@ -1,7 +1,6 @@
 ---
-# layout: page
-title: About
-permalink: /about/
+layout: "iffy"
+title: "Home"
 ---
 # Isaac French
 
