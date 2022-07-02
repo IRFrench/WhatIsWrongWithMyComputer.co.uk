@@ -6,10 +6,15 @@
 </head>
 
 <body>
-    {% include navbar.html %}
+    <div class="main">
+        {% include navbar.html %}
 
-    <div class="content">
-        {{ content }}
+        <div class="content" id="content">
+            <div class="blog">
+                {{ content }}
+            </div>
+        </div>
+
     </div>
 
     {% include footer.html %}

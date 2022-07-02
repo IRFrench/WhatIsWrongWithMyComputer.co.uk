@@ -6,12 +6,17 @@
 </head>
 
 <body class="iffy-title">
-    {% include navbar.html %}
 
-    {% include title.html %}
+    <div class="main">
 
-    <div class="content" id="content">
-        {{ content }}
+        {% include navbar.html %}
+
+        {% include title.html %}
+
+        <div class="content" id="content">
+            {{ content }}
+        </div>
+
     </div>
 
     {% include footer.html %}

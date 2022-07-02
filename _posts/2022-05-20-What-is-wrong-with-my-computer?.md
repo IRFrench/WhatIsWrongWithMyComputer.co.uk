@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: "iffy-post"
 title:  "What is wrong with my computer?"
 date:   2022-05-20 16:52:00 +0100
 author: Isaac French
 tags: ["Jeykll", "Github Pages", "First Post"]
 order: 2
 ---
-
+# What is wrong with my computer?
 ## My website
 
 This is my first post, of my first blog, on my first website. Don't expect anything special.

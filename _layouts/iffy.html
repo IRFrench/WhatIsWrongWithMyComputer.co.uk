@@ -6,13 +6,17 @@
 </head>
 
 <body>
-    {% include navbar.html %}
+    <div class="main">
+        {% include navbar.html %}
 
-    <div class="content" id="content">
-        {{ content }}
+        <div class="content" id="content">
+            {{ content }}
+        </div>
+
     </div>
 
     {% include footer.html %}
 </body>
+
 
 </html>

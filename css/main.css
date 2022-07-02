@@ -6,6 +6,7 @@ body {
     --dark_gray: rgb(100, 100, 100);
     --light_black: rgb(50, 50, 50);
     --yellow: #caf822;
+    --blue: rgb(0, 140, 255);
     --silver_grad: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(200, 200, 200, 1) 80%, rgba(177, 177, 177, 1) 100%);
     --blue_grad: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(14, 14, 68, 1) 46%, rgba(0, 113, 136, 1) 100%);
     --green-grad: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(171, 255, 159, 1) 80%, rgba(127, 255, 111, 1) 100%);
@@ -20,6 +21,12 @@ body {
     color: var(--white);
     font-family: Courier New, monospace;
     position: relative;
+}
+
+.main {
+    min-height: 87vh;
+    padding: 0;
+    margin: 0;
 }
 
 .iffy-title {
@@ -116,7 +123,6 @@ body {
 }
 
 .content {
-    width: 100vw;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5rem;
@@ -128,8 +134,27 @@ body {
     list-style: ">>> ";
 }
 
-.blog-link:hover {
+.content a {
+    text-shadow:
+        0 0 5px var(--blue);
+    color: var(--blue);
+}
+
+.content a:hover {
     color: var(--black);
+    text-shadow: none;
+    background-color: var(--yellow);
+}
+
+.content a:visited {
+    text-shadow:
+        0 0 5px var(--blue);
+    color: var(--blue);
+}
+
+.content a:visited:hover {
+    color: var(--black);
+    text-shadow: none;
     background-color: var(--yellow);
 }
 
