@@ -1,12 +1,10 @@
 ---
 layout: "iffy-post"
 title:  "What is wrong with my computer?"
-date:   2022-05-20 16:52:00 +0100
+iffy-date: "20th May 2022"
 author: Isaac French
-tags: ["Jeykll", "Github Pages", "First Post"]
-order: 2
+iffy-tags: "Jeykll GithubPages Github FirstPost Blog"
 ---
-# What is wrong with my computer?
 ## My website
 
 This is my first post, of my first blog, on my first website. Don't expect anything special.
@@ -44,3 +42,15 @@ I wanted to layout this blog as a showcase for my website. Showing how it was ma
 Along with weekly blogs, I will try to implement a comment system into the website. I would like to hear your opinion on how I could improve my writing, or maybe just let me know what you think of the posts.
 
 Alongside this, I have plans to build a creative website for myself. However I am not sure whento start or how long this will take.
+
+## Update: Adding custom CSS
+
+I decided to add some custom HTML, CSS and Javascript to the site as a side project. I feel like it went rather well and there were some new techniques that were learnt along the way.
+
+Media queries (`@media`). I had never actually used these before creating this page, mainly because I had always used frameworks for mobile development. Although there is still a lot for me left to cover on the site, I thought it would be worth mentioning that they are not as scary as first thought.
+
+Keyframes (`@Keyframes`). The key to animation through css. The background was not created by me, instad it was found on [here on codepen](https://codepen.io/P1N2O/pen/pyBNzX). The way the animation works is so simple it is genius, the backound is a 400% by 400% width gradient which moves side to side using keyframes. That's it, so simple and so effective.
+
+The typing animation was also taken from [codepen](https://codepen.io/denic/pen/GRoOxbM) again using a very simple and effective method. The animation is split in two, using a blink animation to create a flashing border on the right hand side of the element, and a typing animation to shrink the width to 0, and grow in steps equal to the amount of characters.
+
+I would also like to point to some websites I took insperation from. Obviously [codepen](https://codepen.io/trending) was a big help creating the title page. Originally the site was made using [Jekyll's hacker theme](https://github.com/pages-themes/hacker) so insperation has been taken from there. [Vincent Bernat's site](https://vincent.bernat.ch/en) inspired the header and footer, also Jerikan is very cool but thats another story. I would also recommend [Fireship on YouTube](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA) as the videos are very informative and helpful and insperation was taken from their [front end mini project series](https://www.youtube.com/watch?v=rXuHGLzSmSE&list=PL0vfts4VzfNjfHKRKkMjm_xUXglH6HtL1), a true front end wizard.

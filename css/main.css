@@ -171,7 +171,7 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .footer-item {
@@ -181,6 +181,10 @@ body {
 .footer-title {
     height: 100%;
     font-weight: 900;
+}
+
+.split {
+    margin-left: 2rem;
 }
 
 .footer-split {

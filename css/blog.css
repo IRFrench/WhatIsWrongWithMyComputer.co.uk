@@ -1,48 +1,77 @@
-.blog {
+body {
     --text: white;
+    --dark-text: rgba(255, 255, 255, 0.5);
+    --darker_gray: rgba(20, 20, 20);
     --headers: #37D81E;
+    --code: #ffd9009f;
     --green-grad: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(171, 255, 159, 1) 80%, rgba(127, 255, 111, 1) 100%);
 }
 
-.blog h1 {
+.blog-header {
+    display: grid;
+    grid-template-areas:
+        "title readtime"
+        "author date";
+    gap: 1rem;
+}
+
+.blog code {
+    background: var(--darker_gray);
+    font-family: Courier New, monospace;
+    border-radius: 5px;
+    color: var(--code);
+}
+
+#title {
     text-shadow:
         0 0 10px var(--headers);
     color: var(--headers);
-    /* border-bottom: 2px dotted var(--headers); */
-    padding-bottom: 1rem;
+    grid-area: title;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
 }
 
-.blog h2 {
-    text-shadow:
-        0 0 10px var(--headers);
-    margin-top: 3rem;
-    color: var(--headers);
+#tags,
+#date,
+#author,
+#read-time {
+    color: var(--dark-text);
+    font-style: italic;
+    margin: 0;
+    padding: 0;
 }
 
-.blog h3 {
-    text-shadow:
-        0 0 10px var(--headers);
-    margin-top: 3rem;
-    color: var(--headers);
+#author {
+    grid-area: author;
+    justify-content: center;
 }
 
-.blog h4 {
-    text-shadow:
-        0 0 10px var(--headers);
-    margin-top: 3rem;
-    color: var(--headers);
+#read-time,
+#date {
+    text-align: end;
 }
 
-.blog h5 {
-    text-shadow:
-        0 0 10px var(--headers);
-    margin-top: 3rem;
-    color: var(--headers);
+#read-time {
+    grid-area: readtime;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
 }
 
+#date {
+    font-size: .8rem;
+    grid-area: date;
+}
+
+.blog h1,
+.blog h2,
+.blog h3,
+.blog h4,
+.blog h5,
 .blog h6 {
     text-shadow:
-        0 0 10px var(--headers);
-    margin-top: 3rem;
+        0 0 5px var(--headers);
     color: var(--headers);
+    margin-top: 3rem;
 }

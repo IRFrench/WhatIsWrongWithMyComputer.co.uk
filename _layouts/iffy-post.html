@@ -7,17 +7,28 @@
 
 <body>
     <div class="main">
+
         {% include navbar.html %}
 
         <div class="content" id="content">
-            <div class="blog">
+            <div class="blog-header">
+                <h1 id="title">{{ page.title }}</h1>
+                <p id="read-time"></p>
+                <p id="author">By {{ page.author }}</p>
+                <p id="date">{{ page.iffy-date }}</p>
+            </div>
+
+            <div class="blog" id="blog">
                 {{ content }}
             </div>
+
+            <p id="tags">{{ page.iffy-tags }}</p>
         </div>
 
     </div>
 
     {% include footer.html %}
+
 </body>
 
 </html>
