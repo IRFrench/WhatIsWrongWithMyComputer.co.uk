@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include header.html %}
+    <script type="text/javascript" src="/js/hangman.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        {% include navbar.html %}
+
+        <div class="content" id="content">
+            {{ content }}
+        </div>
+
+    </div>
+
+    {% include footer.html %}
+</body>
+
+
+</html>
