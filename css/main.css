@@ -143,6 +143,7 @@ body {
 .content a:hover {
     color: var(--black);
     text-shadow: none;
+    border-radius: 2px;
     background-color: var(--yellow);
 }
 
@@ -155,6 +156,7 @@ body {
 .content a:visited:hover {
     color: var(--black);
     text-shadow: none;
+    border-radius: 2px;
     background-color: var(--yellow);
 }
 

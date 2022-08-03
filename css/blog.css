@@ -1,7 +1,7 @@
 body {
     --text: white;
     --dark-text: rgba(255, 255, 255, 0.5);
-    --darker_gray: rgba(20, 20, 20);
+    --darker_gray: rgba(35, 35, 35);
     --headers: #37D81E;
     --code: #ffd9009f;
     --green-grad: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(171, 255, 159, 1) 80%, rgba(127, 255, 111, 1) 100%);
@@ -18,7 +18,6 @@ body {
 .blog code {
     background: var(--darker_gray);
     font-family: Courier New, monospace;
-    border-radius: 5px;
     color: var(--code);
 }
 
