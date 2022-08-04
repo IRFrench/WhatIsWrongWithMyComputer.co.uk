@@ -3,14 +3,31 @@ layout: "iffy-game"
 permalink: "/hangman"
 title: "Hangman"
 ---
-<div>
+<div class="gameFrame">
+    <div class="hangmanPlatform">
+        <div class="hangman_1" id="hangman_1"></div>
+        <div class="hangman_2" id="hangman_2"></div>
+        <div class="hangman_3" id="hangman_3"></div>
+        <div class="hangman_4" id="hangman_4"></div>
+        <div class="hangman_5" id="hangman_5"></div>
+        <div class="hangman_6" id="hangman_6"></div>
+        <div class="hangman_7" id="hangman_7"></div>
+        <div class="hangman_8" id="hangman_8"></div>
+        <div class="hangman_9" id="hangman_9"></div>
+        <div class="hangman_10" id="hangman_10"></div>
+    </div>
+
+    <div class="outcome">
+        <h1 id="outcome"></h1>
+    </div>
+
     <div class="theWordHolder">
-        <p class="theWord"></p>
+        <h2 class="theWord" id="theWord"></h2>
     </div>
 
     <input name="letterInput" id="letterInput">
 
     <div class="triedLettersHolder">
-        <p class="triedLetter"></p>
+        <p class="triedLetter" id="triedLetter"></p>
     </div>
 </div>

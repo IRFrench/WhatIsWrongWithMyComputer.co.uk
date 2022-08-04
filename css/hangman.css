@@ -1,0 +1,122 @@
+.gameFrame {
+    text-align: center;
+}
+
+.hangmanPlatform {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#letterInput {
+    width: 1rem;
+    padding: 0.5rem;
+}
+
+.hangman_1 {
+    height: 5%;
+    background-color: white;
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+    right: 8%;
+    display: none;
+}
+
+.hangman_2 {
+    width: 5%;
+    background-color: white;
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+    top: 8%;
+    display: none;
+}
+
+.hangman_3 {
+    height: 5%;
+    background-color: white;
+    position: absolute;
+    right: 40%;
+    left: 8%;
+    top: 8%;
+    display: none;
+}
+
+.hangman_4 {
+    width: 5%;
+    background-color: white;
+    position: absolute;
+    right: 40%;
+    top: 8%;
+    bottom: 75%;
+    display: none;
+}
+
+.hangman_5 {
+    background-color: white;
+    position: absolute;
+    right: 33%;
+    left: 48%;
+    top: 20%;
+    bottom: 61%;
+    border-radius: 100%;
+    display: none;
+}
+
+.hangman_6 {
+    width: 5%;
+    background-color: white;
+    position: absolute;
+    right: 40%;
+    top: 30%;
+    bottom: 38%;
+    display: none;
+}
+
+.hangman_7 {
+    height: 5%;
+    background-color: white;
+    position: absolute;
+    right: 40%;
+    left: 40%;
+    bottom: 30%;
+    transform: rotate(-45deg);
+    display: none;
+}
+
+.hangman_8 {
+    height: 5%;
+    background-color: white;
+    position: absolute;
+    right: 25%;
+    left: 55%;
+    bottom: 30%;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.hangman_9 {
+    height: 5%;
+    background-color: white;
+    position: absolute;
+    right: 25%;
+    left: 55%;
+    bottom: 50%;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.hangman_10 {
+    height: 5%;
+    background-color: white;
+    position: absolute;
+    right: 40%;
+    left: 40%;
+    bottom: 50%;
+    transform: rotate(-45deg);
+    display: none;
+}
