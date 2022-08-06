@@ -25,10 +25,10 @@ const hangmanWords = [
 ];
 
 // Get the chosen word and turn it into letters
-const random = Math.floor(Math.random() * hangmanWords.length);
-const randomWord = hangmanWords[random];
-const chosenWord = randomWord.toUpperCase();
-const chosenWordLetters = chosenWord.split("");
+let random = Math.floor(Math.random() * hangmanWords.length);
+let randomWord = hangmanWords[random];
+let chosenWord = randomWord.toUpperCase();
+let chosenWordLetters = chosenWord.split("");
 
 // The input for the letters
 const letterInput = document.getElementById("letterInput");
@@ -42,34 +42,29 @@ const letterDisplay = document.getElementById("theWord");
 // The outcome announcement
 const outcomeDisplay = document.getElementById("outcome");
 
-const guessedLetters = ["Tried Letters: "];
-const hiddenWord = [];
+let guessedLetters = ["Tried Letters: "];
+let hiddenWord = [];
 
 // Lives
-var hangmanTries = 10;
+let hangmanTries = 10;
 
 // For every letter in the guess, add a _ to the hidden word
-for (var i = 0; i < chosenWordLetters.length; i++) {
+for (let i = 0; i < chosenWordLetters.length; i++) {
     hiddenWord.push("_");
 }
 
+const validLetters = new RegExp("^(?:[A-Z]|[0-9])$")
+
 // Display the hidden word
 letterDisplay.textContent = hiddenWord.join(" ");
+triedLetterDisplay.textContent = guessedLetters.join(" ");
 
 
 
 
-function letterCheck() {
+function letterCheck(event) {
 
-    // If the input is empty
-    if (letterInput.value === "") {
-        return;
-    }
-
-    // Get the entered letter, and remove any others
-    const newlyenteredLetter = letterInput.value.split("").pop();
-    let enteredLetter = newlyenteredLetter.toUpperCase();
-    letterInput.value = enteredLetter;
+    let enteredLetter = event.key.toUpperCase()
 
     // If the letter has already been guessed
     if (guessedLetters.includes(enteredLetter)) {
@@ -80,6 +75,12 @@ function letterCheck() {
         return;
     }
 
+    if (!validLetters.test(enteredLetter)) {
+        return;
+    }
+
+    letterInput.textContent = enteredLetter
+
     // Update the guessed words
     guessedLetters.push(enteredLetter);
     triedLetterDisplay.textContent = guessedLetters.join(" ");
@@ -88,7 +89,7 @@ function letterCheck() {
     if (chosenWordLetters.includes(enteredLetter)) {
 
         // Add the letter to  the hidden word in the correct place
-        for (var i = 0; i < chosenWordLetters.length; i++) {
+        for (let i = 0; i < chosenWordLetters.length; i++) {
             if (chosenWordLetters[i] === enteredLetter) {
                 hiddenWord[i] = enteredLetter;
                 letterDisplay.textContent = hiddenWord.join(" ");
@@ -108,10 +109,10 @@ function letterCheck() {
 
 function hangman() {
     // Get incremental numbers
-    var currentPosition = 10 - hangmanTries;
+    let currentPosition = 10 - hangmanTries;
 
     // Display the hangman body
-    var hangmanBody = document.getElementById("hangman_" + currentPosition);
+    let hangmanBody = document.getElementById("hangman_" + currentPosition);
     hangmanBody.style.display = "block";
 }
 
@@ -132,5 +133,34 @@ function CheckResult() {
     }
 }
 
+function reset() {
+    // Get the chosen word and turn it into letters
+    random = Math.floor(Math.random() * hangmanWords.length);
+    randomWord = hangmanWords[random];
+    chosenWord = randomWord.toUpperCase();
+    chosenWordLetters = chosenWord.split("");
 
-letterInput.addEventListener("input", letterCheck);
+    guessedLetters = ["Tried Letters: "];
+    hiddenWord = [];
+
+    // Lives
+    hangmanTries = 10;
+
+    // For every letter in the guess, add a _ to the hidden word
+    for (let i = 0; i < chosenWordLetters.length; i++) {
+        hiddenWord.push("_");
+    }
+
+    // Display the hidden word
+    letterDisplay.textContent = hiddenWord.join(" ");
+    triedLetterDisplay.textContent = guessedLetters.join(" ");
+
+    outcomeDisplay.textContent = "";
+    letterInput.textContent = "";
+
+    for (let i = 1; i <= 10; i++) {
+        document.getElementById("hangman_" + i).style.display = "none";
+    }
+}
+
+document.addEventListener("keydown", letterCheck);

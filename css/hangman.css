@@ -1,5 +1,6 @@
 .gameFrame {
     text-align: center;
+    --headers: #37D81E;
 }
 
 .hangmanPlatform {
@@ -13,7 +14,29 @@
 
 #letterInput {
     width: 1rem;
-    padding: 0.5rem;
+    height: 2rem;
+    border-bottom: 2px solid white;
+    padding: 0;
+    margin: 0;
+}
+
+.resetButton {
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: .5rem;
+    border-radius: 10%;
+}
+
+.resetButton:hover {
+    cursor: pointer;
+}
+
+.enteredLetter {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .hangman_1 {
