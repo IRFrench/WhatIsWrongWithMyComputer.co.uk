@@ -1,3 +1,3 @@
-- Add a comment system by saving the comments to a file on a s3 bucket
+- Add a comment system by saving the comments to a file on an s3 bucket
 - Mobile access for the website
 - Hangman into wordle type clone; Intergrate JSON file and hide any way to read the word

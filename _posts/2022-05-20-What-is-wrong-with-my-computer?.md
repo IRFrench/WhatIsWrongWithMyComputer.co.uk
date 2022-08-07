@@ -41,7 +41,7 @@ I wanted to layout this blog as a showcase for my website. Showing how it was ma
 
 Along with weekly blogs, I will try to implement a comment system into the website. I would like to hear your opinion on how I could improve my writing, or maybe just let me know what you think of the posts.
 
-Alongside this, I have plans to build a creative website for myself. However I am not sure whento start or how long this will take.
+Alongside this, I have plans to build a creative website for myself. However I am not sure when to start or how long this will take.
 
 ## Update: Adding custom CSS
 
