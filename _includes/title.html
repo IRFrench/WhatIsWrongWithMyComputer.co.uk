@@ -1,9 +1,18 @@
 <div class="header-block">
     <h1 class="header-title">What is wrong with my computer</h1>
     <div class="center-wrapper">
-        <p class="header-text">
-            The blog of someone who wants to know why 'caves' are the answer to every computer question
+        <p class="header-text" id="subtitle">
+            text
         </p>
+        <script>
+            var subtitles = {{ site.data.subtitles | jsonify }};
+            subtitle = document.getElementById("subtitle");
+
+            var text = subtitles[Math.floor(Math.random() * subtitles.length)];
+
+            subtitle.innerText = text
+            subtitle.style = "animation: typing " + (text.length / 10) + "s steps(" + text.length + "), blink .5s step-end infinite alternate; width: " + text.length + "ch;"
+        </script>
     </div>
 
 

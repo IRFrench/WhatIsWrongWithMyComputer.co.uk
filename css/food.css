@@ -1,0 +1,97 @@
+.content {
+    --size: 1rem;
+    --size-big: 1.5rem;
+    --size-small: .2rem;
+}
+
+.weekPlanner {
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: var(--dark_gray);
+}
+
+.weekday {
+    display: flex;
+    padding: var(--size);
+    margin: 0;
+    align-items: center;
+    width: fit-content;
+}
+
+.iconButton {
+    padding: var(--size-small) var(--size-small) 0 var(--size-small);
+    margin: 0 0 0 var(--size-small);
+    border: 0;
+}
+
+.icon {
+    width: var(--size);
+    height: var(--size);
+    padding: 0;
+    margin: 0;
+}
+
+.label {
+    padding: 0;
+    margin: 0 var(--size-small) 0 0;
+    height: var(--size);
+    color: black;
+}
+
+.meal {
+    height: var(--size-big);
+    border-radius: 5px;
+    border: 0;
+    margin: 3px;
+    background-color: var(--dark_white);
+}
+
+.meal:focus-visible {
+    border: 3px solid var(--blue);
+    margin: 0;
+    outline: none;
+}
+
+.pad {
+    padding: var(--size);
+}
+
+@media only screen and (max-width: 1000px) {
+    .content {
+        margin-left: 0%;
+        margin-right: 0%;
+        --size: 3rem;
+        --size-big: 3rem;
+        --size-small: 1rem;
+        font-size: 3rem;
+    }
+
+    .button {
+        border: 5px solid black;
+        border-radius: 10px;
+        font-size: 3rem;
+    }
+
+    .border {
+        border: solid 5px black;
+    }
+
+    .meal {
+        font-size: 2rem;
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    td {
+        margin-top: 2rem;
+    }
+
+    .header-block {
+        padding: 2rem 0% 2rem 0%;
+    }
+}

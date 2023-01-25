@@ -1,0 +1,125 @@
+{
+    "Fajitas": [
+        "chicken",
+        "fajita seasoning",
+        "wraps",
+        "salsa",
+        "guacamole",
+        "nachos",
+        "olive oil",
+        "red onion"
+    ],
+    "Jacket potato": [
+        "baking potatos",
+        "butter",
+        "beans",
+        "cheese"
+    ],
+    "Steak": [
+        "garlic butter",
+        "chips",
+        "ketchup",
+        "salt",
+        "pepper",
+        "olive oil",
+        "steak",
+        "onion rings"
+    ],
+    "Burgers": [
+        "burgers",
+        "chips",
+        "rolls",
+        "cheese",
+        "ketchup",
+        "salt",
+        "pepper",
+        "red onion"
+    ],
+    "Chicken korma": [
+        "chicken",
+        "rice",
+        "korma sauce",
+        "olive oil",
+        "naan bread",
+        "salt",
+        "mango chutney"
+    ],
+    "Sausage pasta": [
+        "sausages",
+        "pasta",
+        "carrots",
+        "red onion",
+        "mango chutney",
+        "curry powder",
+        "tomato pasatta"
+    ],
+    "Chicken salad": [
+        "chicken",
+        "white onion",
+        "olive oil",
+        "pasta",
+        "salt",
+        "pepper"
+    ],
+    "Sausage, chips and beans": [
+        "sausages",
+        "chips",
+        "beans",
+        "ketchup",
+        "salt",
+        "pepper"
+    ],
+    "Toad in the hole": [
+        "eggs",
+        "milk",
+        "flour",
+        "sausages",
+        "carrots",
+        "broccoli",
+        "gravy"
+    ],
+    "Tacos": [
+        "mince",
+        "taco seasoning",
+        "taco shells",
+        "salad",
+        "red onion",
+        "guacamole",
+        "salsa"
+    ],
+    "Out": [
+        "money"
+    ],
+    "Broccoli pasta bake": [
+        "broccoli",
+        "pasta",
+        "cheese",
+        "corn flour",
+        "milk",
+        "salt",
+        "pepper",
+        "garlic bread"
+    ],
+    "Leek and potato soup": [
+        "leek",
+        "potatoes",
+        "cream",
+        "milk",
+        "salt",
+        "pepper"
+    ],
+    "Burritos": [
+        "mince",
+        "burrito seasoning",
+        "wraps",
+        "guacamole",
+        "salsa",
+        "salad"
+    ],
+    "Carbonara": [
+        "spaghetti",
+        "bacon",
+        "cheese",
+        "white sauce"
+    ]
+}
